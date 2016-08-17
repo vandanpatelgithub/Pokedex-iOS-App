@@ -20,7 +20,13 @@ class PokemonDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        titleLabel.text = pokemon.name
+        mainImage.image = UIImage(named: "\(pokemon.pokedexID)")
+        
+        pokemon.downloadPokemonDetails { 
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {

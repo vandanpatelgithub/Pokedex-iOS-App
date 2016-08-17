@@ -127,10 +127,27 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
     }
     
+    func searchBarShouldBeginEditing(searchBar: UISearchBar) -> Bool {
+        searchBar.showsScopeBar = true
+        searchBar.sizeToFit()
+        searchBar.setShowsCancelButton(true, animated: true)
+        
+        return true
+    }
+    
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        view.endEditing(true)
+        searchBar.sizeToFit()
+        searchBar.setShowsCancelButton(false, animated: true)
+    }
+    
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         view.endEditing(true)
     }
     
+    @IBAction func cancelButtonPressed(sender: UIButton) {
+        view.endEditing(true)
+    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "PokemonDetailVC" {
             if let detailsVC = segue.destinationViewController as? PokemonDetailVC {

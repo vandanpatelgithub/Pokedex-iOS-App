@@ -125,6 +125,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RJ4-OU-6JB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2zJ-QC-gJv"/>
+                            <constraint firstAttribute="trailing" secondItem="dJs-Sk-TFU" secondAttribute="trailing" id="4yb-7O-7mX"/>
                             <constraint firstAttribute="trailing" secondItem="RJ4-OU-6JB" secondAttribute="trailing" constant="20" id="5VI-nj-8Jq"/>
                             <constraint firstItem="RJ4-OU-6JB" firstAttribute="top" secondItem="dJs-Sk-TFU" secondAttribute="bottom" constant="20" id="9ep-nv-dx6"/>
                             <constraint firstItem="dJs-Sk-TFU" firstAttribute="top" secondItem="bg7-9q-Nbb" secondAttribute="bottom" id="CEs-dc-4ia"/>
@@ -146,6 +147,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="b0S-bj-kx7"/>
                                 <exclude reference="EaC-SX-JZZ"/>
                                 <exclude reference="5VI-nj-8Jq"/>
                                 <exclude reference="9ep-nv-dx6"/>
@@ -162,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1492" y="355"/>
+            <point key="canvasLocation" x="-1357" y="342"/>
         </scene>
         <!--Pokemon DetailVC-->
         <scene sceneID="Ulu-fi-L8t">
@@ -409,8 +411,7 @@
                         <outlet property="mainImage" destination="Doc-Vg-PFu" id="k05-gR-OHt"/>
                         <outlet property="nextEvoImage" destination="Ko2-cb-3C0" id="qqH-h4-dQF"/>
                         <outlet property="titleLabel" destination="vKA-GX-nfY" id="2Hz-MJ-aK8"/>
-                        <outlet property="type" destination="1wT-bE-HSq" id="X6M-T5-eJV"/>
-                        <outlet property="typeLabel" destination="RRv-1J-MhD" id="Ja8-c7-rVO"/>
+                        <outlet property="typeLabel" destination="1wT-bE-HSq" id="EiB-lu-5dn"/>
                         <outlet property="weightLabel" destination="ALQ-M3-EPz" id="BcU-a4-H7F"/>
                     </connections>
                 </viewController>
