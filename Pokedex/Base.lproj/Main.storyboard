@@ -196,6 +196,9 @@
                                             <constraint firstAttribute="width" constant="40" id="Op4-4d-VsY"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="JKL-kn-LgH" eventType="touchUpInside" id="PXa-Fd-SHf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.40154708300000003" blue="0.40820542929999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -237,7 +240,7 @@
                                                     <constraint firstAttribute="width" constant="125" id="ZrS-j5-Ysn"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="RRv-1J-MhD">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="RRv-1J-MhD">
                                                 <rect key="frame" x="125" y="37" width="435" height="69"/>
                                                 <string key="text">They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark. They fly around on moonless nights and attack careless prey. Nothing can beat them in a battle in the dark.</string>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -396,7 +399,19 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="baseAttackLabel" destination="eQW-na-oyr" id="yvd-ZG-fss"/>
+                        <outlet property="currentEvoImage" destination="1oQ-ec-BUT" id="CaE-6S-3UO"/>
+                        <outlet property="defenseLabel" destination="dn7-lZ-MTp" id="TUy-fv-Lxq"/>
+                        <outlet property="descriptionLabel" destination="RRv-1J-MhD" id="2rb-fC-H73"/>
+                        <outlet property="evolutionText" destination="azM-hk-TeO" id="sW5-ko-qG0"/>
+                        <outlet property="heightLabel" destination="aWg-WD-WTh" id="op5-kf-5UB"/>
+                        <outlet property="idLabel" destination="8s7-Gt-o7m" id="F8Z-yP-VD2"/>
+                        <outlet property="mainImage" destination="Doc-Vg-PFu" id="k05-gR-OHt"/>
+                        <outlet property="nextEvoImage" destination="Ko2-cb-3C0" id="qqH-h4-dQF"/>
                         <outlet property="titleLabel" destination="vKA-GX-nfY" id="2Hz-MJ-aK8"/>
+                        <outlet property="type" destination="1wT-bE-HSq" id="X6M-T5-eJV"/>
+                        <outlet property="typeLabel" destination="RRv-1J-MhD" id="Ja8-c7-rVO"/>
+                        <outlet property="weightLabel" destination="ALQ-M3-EPz" id="BcU-a4-H7F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9M-0n-pe2" userLabel="First Responder" sceneMemberID="firstResponder"/>
